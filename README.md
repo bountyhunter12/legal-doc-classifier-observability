@@ -56,31 +56,8 @@ By the end of this lab, you will be able to:
 Before we write a single command, it helps to see the full pipeline as
 one picture. Each box becomes a chapter later in the lab.
 
-```
-   Dataset (LexGLUE SCOTUS)
-        |
-        v
-   Legal-BERT Training          (Chapter 2)
-        |
-        v
-   Saved Model (./saved_model/)
-        |
-        v
-   FastAPI Service              (Chapter 3)
-        |
-        +---> /predict  --> JSON response
-        |
-        +---> /metrics
-                |
-                v
-          Prometheus              (Chapter 4)
-                |
-                v
-            Grafana               (Chapter 4)
-                |
-                v
-         Web Frontend             (Chapter 5)
-```
+<img width="453" height="599" alt="image" src="https://github.com/user-attachments/assets/5f8d56a3-a513-4a84-954e-90b0fb078f94" />
+
 
 The two side-channels you don't see in the picture are **MLflow**
 (records hyperparameters and metrics from Chapter 2's training run) and
