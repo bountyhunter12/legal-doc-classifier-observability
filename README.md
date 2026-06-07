@@ -159,7 +159,8 @@ We **fine-tune** it on the SCOTUS split of the
 benchmark. Fine-tuning is short (3 epochs) because the heavy lifting
 was already done in pre-training.
 ## User Interface
-<img width="1322" height="592" alt="image" src="https://github.com/user-attachments/assets/2c84aba6-3b5d-4fe5-a6fd-af7648a13433" />
+<img width="1841" height="837" alt="Screenshot 2026-06-03 201102" src="https://github.com/user-attachments/assets/e3c5133f-71b2-4ab7-b3da-7cf51b5ddc3f" />
+
 
 ## Implementation
 
