@@ -166,25 +166,8 @@ was already done in pre-training.
 
 ### The five components
 
-```
-   +--------------+      +--------------+      +--------------+
-   |  1. Training | ---> | 2. Saved     | ---> |  3. FastAPI  |
-   |  (Colab GPU) |      |   model      |      |   service    |
-   +--------------+      +--------------+      +------+-------+
-                                                       | /predict
-                                                       v
-                                              +----------------+
-                                              |  4. Prometheus |
-                                              |   (scrapes     |
-                                              |    /metrics)   |
-                                              +------+---------+
-                                                     | PromQL
-                                                     v
-                                              +----------------+
-                                              |  5. Grafana    |
-                                              |   (dashboards) |
-                                              +----------------+
-```
+<img width="1071" height="102" alt="legal-Page-3 drawio" src="https://github.com/user-attachments/assets/dfac2372-ff9f-4b5d-bb51-0fb21d0dda1b" />
+
 
 1. **Training** runs once, on a GPU we don't own (Google Colab). It
    produces a folder of weights + tokenizer files.
