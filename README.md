@@ -801,40 +801,7 @@ small `:root` CSS block at the top of the file and are easy to retheme.
 
 <img width="1841" height="837" alt="Screenshot 2026-06-03 201102" src="https://github.com/user-attachments/assets/e3c5133f-71b2-4ab7-b3da-7cf51b5ddc3f" />
 
-## Implementation
 
-You have two options for hosting the page.
-
-### Option A - open the file directly
-
-```powershell
-Start-Process .\index.html
-```
-
-The page calls `http://localhost:8000/predict` directly, so the browser
-must be on a machine that can reach the API.
-
-### Option B - publish to GitHub Pages
-
-1. Push `index.html` to the repo's `main` branch.
-2. In GitHub -> **Settings -> Pages**, set the source to `main / root`.
-3. After ~30 s, your page is live at
-   `https://<owner>.github.io/legal-doc-classifier-observability/`.
-
-## Under the Hood
-
-The page is **plain HTML + CSS + vanilla JavaScript** - no build step,
-no framework, no bundler. You can read the entire file in one screen.
-
-Two implementation details worth noting:
-
-- The page calls `http://localhost:8000/predict` directly, so the
-  browser must be on a machine that can reach the API. From GitHub
-  Pages this means the visitor's own machine must be running the
-  Docker stack, or the API must be exposed behind a CORS-enabled
-  public URL.
-- The four label colours are defined in a `:root` CSS block and used
-  by adding/removing a single class on the result badge.
 
 ## Verification
 
@@ -846,14 +813,6 @@ Two implementation details worth noting:
 If the badge shows **Criminal Procedure** for *The defendant was
 charged with assault and battery*, the full stack - frontend, API,
 model, metrics - is working end-to-end.
-
-## Troubleshooting
-
-| Symptom                          | Cause                                | Fix                                                                            |
-|----------------------------------|--------------------------------------|--------------------------------------------------------------------------------|
-| "Could not connect to API"       | Docker stack not running             | Run Chapter 3 to start it                                                       |
-| CORS error in browser console    | GitHub Pages calling `localhost`     | Run the API on a CORS-enabled public host, or open `index.html` locally        |
-| Page loads but button does nothing | JavaScript disabled                | Re-enable JS in the browser                                                     |
 
 ---
 
