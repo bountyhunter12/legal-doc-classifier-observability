@@ -163,13 +163,13 @@ different fine-tuning experiments later.
 
 ```
 legal-doc-classifier/
-+-- saved_model/                  <- created in Chapter 2, copied into project in Chapter 3
++-- saved_model/                 
 +-- app/
 |   +-- __init__.py               <- makes `app` an importable package
 |   +-- main.py                   <- FastAPI app: /predict, /health, /metrics
 |   +-- model_loader.py           <- loads Legal-BERT once, exposes predict()
 +-- train/
-|   +-- train.py                  <- Colab training script (Chapter 2)
+|   +-- train.py                  <- Colab training script 
 +-- grafana/
 |   +-- dashboards/dashboard.json <- pre-built monitoring dashboard
 |   +-- provisioning/
@@ -181,7 +181,7 @@ legal-doc-classifier/
 +-- Dockerfile                    <- builds the API image
 +-- docker-compose.yml            <- orchestrates api + mlflow + prometheus + grafana
 +-- requirements.txt              <- Python dependencies
-+-- README.md                     <- this file
++-- README.md                    
 ```
 
 > **WARNING:** `saved_model/` is **not** in git - it weighs ~400 MB.
