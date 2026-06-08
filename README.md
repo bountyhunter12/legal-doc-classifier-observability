@@ -678,8 +678,9 @@ You should see:
 - **Label Prediction Counts** filling in
 - **Average Prediction Latency** holding steady around 100-400 ms
 <img width="1911" height="772" alt="Screenshot 2026-06-07 174613" src="https://github.com/user-attachments/assets/6f4e1373-afec-4831-a06b-88240adca95f" />
-<img width="1891" height="773" alt="Screenshot 2026-06-07 175931" src="https://github.com/user-attachments/assets/92f11292-f8ce-44bc-a562-139c6f5f12fd" />
-<img width="1900" height="893" alt="Screenshot 2026-06-07 175939" src="https://github.com/user-attachments/assets/8e946dba-4d46-4682-a40c-b81762ce04b1" />
+<img width="1918" height="876" alt="Screenshot 2026-06-07 175715" src="https://github.com/user-attachments/assets/462a262e-614a-4a93-8a39-4d5798ee944d" />
+<img width="1906" height="901" alt="Screenshot 2026-06-07 175724" src="https://github.com/user-attachments/assets/3b57ff1b-1599-4866-bb25-acef7899d959" />
+
 
 ## Under the Hood
 
